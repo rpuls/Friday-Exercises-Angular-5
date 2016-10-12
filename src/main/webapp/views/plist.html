@@ -1,0 +1,7 @@
+<h2>User list</h2>
+<table class="table">
+    <tr><td>Picture</td><td>Name</td><td>link</td></tr>
+    <tr ng-repeat="user in uctrl.users">
+        <td><img src="{{user.picture.thumbnail}}"></td><td>{{user.first + " " + user.last}}</td><td><a ng-click="uctrl.setUser(user)" href="#/details">details</a></td>
+    </tr>
+</table>
